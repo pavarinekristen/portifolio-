@@ -1,0 +1,140 @@
+:root {
+    --preto: #561C24;
+    --branco: #C7B7A3;
+    --azul: #6D2932;
+    --vermelho: #8b0505;
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-segundaria: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: black;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 12%;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.links {
+    font-family: var(--fonte-segundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.forte {
+    color: var(--azul);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 12%;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+
+.frase {
+    font-size: 1.5rem;
+    font-family: var(--fonte-segundaria);
+}
+
+.botao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.botaos {
+
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 21.5px none;
+    font-family: var(--fonte-segundaria);
+    border: 2px solid var(--azul);
+
+}
+
+.botaos:hover {
+    background-color: var(--vermelho);
+}
+
+.img {
+    width: 50%;
+}
+
+.rodape {
+    text-align: center;
+    color: var(--preto);
+    padding: 24px;
+    background-color: var(--azul);
+    font-size: 1.5rem;
+    font-family: var(--fonte-segundaria);
+}
+
+.subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.estudo {
+    color: var(--azul);
+}
+
+
+@media (max-width:1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
